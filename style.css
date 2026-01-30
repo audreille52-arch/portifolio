@@ -79,7 +79,7 @@ main{
 }
 aside ul{
 display: flex;
-gap: 121px;
+gap: 120px;
 
 }
 
@@ -144,3 +144,13 @@ section ul{
     justify-content: center;
     flex-direction: column;   
 }   
+footer{
+    background-color:rgb(22, 65, 25) ;
+border-radius: 15px;
+
+}
+header{
+    background-color:rgb(17, 173, 28) ;
+border-radius: 30px;
+margin-bottom:60px ;
+}
