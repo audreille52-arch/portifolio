@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form - Submit your inquiry">
+    <meta name="keywords" content="form, contact, submission, inquiry">
+    <title>Contact Form - Professional Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+        <p><em>Submit Your Inquiry</em></p>
+    </header>
+
+    <nav>
+        <h2>Navigation Menu</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Get In Touch</a></li>
+            <li><a href="media.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <article>
+                <h3>Get In Touch</h3>
+                <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
+
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <div>
+                            <label for="fullname">Full Name <span>*</span></label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div>
+                            <label for="website">Website/URL</label>
+                            <input type="url" id="website" name="website">
+                        </div>
+
+                        <div>
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="18" max="120">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Service Information</legend>
+
+                        <div>
+                            <label for="service">Service Type <span>*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Select a Service --</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="implementation">Implementation</option>
+                                <option value="training">Training</option>
+                                <option value="support">Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">-- Select Budget --</option>
+                                <optgroup label="Small Projects">
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2000">$1,000 - $2,000</option>
+                                </optgroup>
+                                <optgroup label="Medium Projects">
+                                    <option value="2000-5000">$2,000 - $5,000</option>
+                                    <option value="5000-10000">$5,000 - $10,000</option>
+                                </optgroup>
+                                <optgroup label="Large Projects">
+                                    <option value="10000+">$10,000+</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="priority">Priority Level</label>
+                            <input type="range" id="priority" name="priority" min="1" max="10" value="5">
+                            <small>1 (Low) to 10 (High)</small>
+                        </div>
+
+                        <div>
+                            <label for="startdate">Preferred Start Date</label>
+                            <input type="date" id="startdate" name="startdate">
+                        </div>
+
+                        <div>
+                            <label for="timeframe">Preferred Contact Time</label>
+                            <input type="time" id="timeframe" name="timeframe">
+                        </div>
+
+                        <div>
+                            <label for="duration">Project Duration (in weeks)</label>
+                            <input type="number" id="duration" name="duration" min="1" max="52" step="1">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message and Preferences</legend>
+
+                        <div>
+                            <label for="subject">Subject <span>*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div>
+                            <label for="message">Message <span>*</span></label>
+                            <textarea id="message" name="message" rows="6" cols="50" required></textarea>
+                        </div>
+
+                        <div>
+                            <label for="details">Additional Details</label>
+                            <textarea id="details" name="details" rows="4" cols="50" placeholder="Any additional information..."></textarea>
+                        </div>
+
+                        <div>
+                            <label for="attachment">Upload File (if needed)</label>
+                            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.txt">
+                        </div>
+
+                        <div>
+                            <label for="contact_preference">Preferred Contact Method</label>
+                            <select id="contact_preference" name="contact_preference">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="either">Either</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label>Service Interest (Check all that apply)</label>
+                            <input type="checkbox" id="consult" name="interests" value="consultation">
+                            <label for="consult">Consultation Services</label>
+                            
+                            <input type="checkbox" id="implement" name="interests" value="implementation">
+                            <label for="implement">Implementation Services</label>
+                            
+                            <input type="checkbox" id="train" name="interests" value="training">
+                            <label for="train">Training Programs</label>
+                            
+                            <input type="checkbox" id="maintain" name="interests" value="maintenance">
+                            <label for="maintain">Maintenance Support</label>
+                        </div>
+
+                        <div>
+                            <label>Company Size</label>
+                            <input type="radio" id="startup" name="company_size" value="startup">
+                            <label for="startup">Startup (1-10 people)</label>
+                            
+                            <input type="radio" id="small" name="company_size" value="small">
+                            <label for="small">Small (11-50 people)</label>
+                            
+                            <input type="radio" id="medium" name="company_size" value="medium">
+                            <label for="medium">Medium (51-250 people)</label>
+                            
+                            <input type="radio" id="large" name="company_size" value="large">
+                            <label for="large">Large (250+ people)</label>
+                        </div>
+
+                        <div>
+                            <label for="color">Favorite Color</label>
+                            <input type="color" id="color" name="color">
+                        </div>
+
+                        <div>
+                            <label for="satisfaction">Expected Satisfaction Level</label>
+                            <meter id="satisfaction" name="satisfaction" min="0" max="100" low="30" high="70" optimum="90" value="80"></meter>
+                        </div>
+
+                        <div>
+                            <label for="progress">Project Completion Estimate</label>
+                            <progress id="progress" name="progress" max="100" value="0"></progress>
+                        </div>
+
+                        <div>
+                            <label for="comments">Special Requests or Comments</label>
+                            <textarea id="comments" name="comments" rows="3" cols="50" placeholder="Any special requirements..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Consent and Agreement</legend>
+
+                        <div>
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">I agree to the terms and conditions <span>*</span></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the privacy policy <span>*</span></label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Form Actions</legend>
+                        <button type="submit">Submit Form</button>
+                        <button type="reset">Clear Form</button>
+                    </fieldset>
+
+                    <div>
+                        <output name="confirmation" for="fullname email">Form Status: Ready to Submit</output>
+                    </div>
+                </form>
+
+                <datalist id="companies">
+                    <option value="Company A">
+                    <option value="Company B">
+                    <option value="Company C">
+                </datalist>
+
+                <details>
+                    <summary>Form Help & Information</summary>
+                    <p>This form collects information to help us serve you better. All fields marked with <span>*</span> are required.</p>
+                    <p><strong>Required Fields:</strong> Full Name, Email, Service Type, Subject, Message, Agreement checkboxes</p>
+                    <p><strong>Processing Time:</strong> We typically respond within 24-48 hours.</p>
+                </details>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Form Tips</h3>
+            <ul>
+                <li>Fill in all required fields marked with <strong>*</strong></li>
+                <li>Double-check your email address</li>
+                <li>Be specific about your service needs</li>
+                <li>Include any relevant details</li>
+                <li>Review before submitting</li>
+            </ul>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Professional Portfolio. All rights reserved.</p>
+        <p><a href="index.html">Back to Home</a> | <a href="contact.html">Contact Page</a></p>
+    </footer>
+</body>
+</html>

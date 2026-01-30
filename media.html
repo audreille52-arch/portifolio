@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media gallery - Photos, videos, and audio content">
+    <meta name="keywords" content="gallery, photos, videos, audio, media">
+    <title>Media Gallery - Professional Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Media Gallery</h1>
+        <p><em>Photos, Videos, and Audio Content</em></p>
+    </header>
+
+    <nav>
+        <h2>Navigation Menu</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Get In Touch</a></li>
+            <li><a href="media.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Photo Gallery</h2>
+            <article>
+                <h3>Professional Portfolio Images</h3>
+                <p>Browse our collection of professional photos showcasing our work and services.</p>
+
+                <figure>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="https://via.placeholder.com/300x200?text=Portfolio+1">
+                        <source media="(max-width: 900px)" srcset="https://via.placeholder.com/600x400?text=Portfolio+1">
+                        <img src="https://via.placeholder.com/800x600?text=Portfolio+1" alt="Professional portfolio image 1" width="800" height="600">
+                    </picture>
+                    <figcaption>Office Environment - Professional Workspace</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/800x600?text=Team+Photo" alt="Team collaboration photo" width="800" height="600">
+                    <figcaption>Team Collaboration - Working Together for Excellence</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/800x600?text=Project+Work" alt="Project implementation work" width="800" height="600">
+                    <figcaption>Project Implementation - Delivering Quality Solutions</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/800x600?text=Training+Session" alt="Professional training session" width="800" height="600">
+                    <figcaption>Training Programs - Knowledge Sharing and Development</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/800x600?text=Client+Meeting" alt="Client meeting and discussion" width="800" height="600">
+                    <figcaption>Client Engagement - Building Strong Relationships</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/800x600?text=Awards+Recognition" alt="Awards and recognition" width="800" height="600">
+                    <figcaption>Awards and Recognition - Industry Excellence</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Image Map Example</h2>
+            <article>
+                <h3>Interactive Service Map</h3>
+                <p>Click on different areas to learn more about our services:</p>
+                
+                <img src="https://via.placeholder.com/800x400?text=Service+Areas" alt="Service area map" usemap="#serviceMap" width="800" height="400">
+                
+                <map name="serviceMap">
+                    <area shape="rect" coords="0,0,200,400" alt="Consultation" href="services.html">
+                    <area shape="rect" coords="200,0,400,400" alt="Implementation" href="services.html">
+                    <area shape="rect" coords="400,0,600,400" alt="Training" href="services.html">
+                    <area shape="rect" coords="600,0,800,400" alt="Support" href="services.html">
+                </map>
+                <small>Click on areas to learn more about services</small>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Video Content</h2>
+            <article>
+                <h3>Professional Videos</h3>
+                <p>Watch our professional videos and tutorials:</p>
+
+                <figure>
+                    <video width="800" height="450" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Professional Overview - Company Introduction</figcaption>
+                </figure>
+
+                <figure>
+                    <video width="800" height="450" controls poster="https://via.placeholder.com/800x450?text=Tutorial+Video">
+                        <source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Service Tutorial - How to Use Our Services</figcaption>
+                </figure>
+
+                <figure>
+                    <video width="800" height="450" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <track src="captions.vtt" kind="captions" srclang="en" label="English">
+                        Video not supported
+                    </video>
+                    <figcaption>Client Testimonials - What Our Clients Say</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Audio Content</h2>
+            <article>
+                <h3>Audio Presentations</h3>
+                <p>Listen to our audio presentations and podcasts:</p>
+
+                <figure>
+                    <audio controls width="100%">
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption>Podcast Episode 1 - Professional Development Tips</figcaption>
+                </figure>
+
+                <figure>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption>Audio Interview - Industry Insights</figcaption>
+                </figure>
+
+                <figure>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Audio not supported in your browser
+                    </audio>
+                    <figcaption>Service Overview - Audio Guide</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Embedded Content</h2>
+            <article>
+                <h3>External Media</h3>
+
+                <figure>
+                    <embed src="https://www.w3schools.com/html/pic_trulli.jpg" type="image/jpg" width="400" height="300">
+                    <figcaption>Embedded Image Example</figcaption>
+                </figure>
+
+                <figure>
+                    <object data="https://via.placeholder.com/600x400?text=PDF+Document" type="application/pdf" width="600" height="400">
+                        <p>PDF not supported. <a href="https://example.com/document.pdf">Download PDF</a></p>
+                    </object>
+                    <figcaption>Company Brochure (PDF)</figcaption>
+                </figure>
+
+                <figure>
+                    <object data="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" width="400" height="300">
+                        <p>Video object not supported.</p>
+                    </object>
+                    <figcaption>Embedded Video File</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Media Information</h2>
+            <article>
+                <h3>Media Details and Metadata</h3>
+                <p>Information about media content dates and details:</p>
+
+                <p>Portfolio created on: <time datetime="2026-01-24">January 24, 2026</time></p>
+                <p>Last updated: <time datetime="2026-01-24T14:30:00Z">January 24, 2026 at 2:30 PM</time></p>
+
+                <p>Video statistics:</p>
+                <ul>
+                    <li>Total videos: <data value="3">3 professional videos</data></li>
+                    <li>Total audio clips: <data value="3">3 audio presentations</data></li>
+                    <li>Total photos: <data value="6">6 professional photos</data></li>
+                    <li>Gallery size: <data value="250">approximately 250 MB</data></li>
+                </ul>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Media Guidelines</h3>
+            <p>All media content is the property of Professional Services. Usage restrictions apply.</p>
+            <ul>
+                <li>Videos are HD quality</li>
+                <li>All photos are professional grade</li>
+                <li>Audio content is copyright protected</li>
+                <li>Download rights may be restricted</li>
+            </ul>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Professional Portfolio. All rights reserved.</p>
+        <p><a href="index.html">Back to Home</a> | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
