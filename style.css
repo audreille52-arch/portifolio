@@ -106,3 +106,41 @@ footer{
     align-items: center;
     justify-content: center;
 }
+section address,ft{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section h2,gt{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section h3,t{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+section dl{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+section ol{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+list-style-type: style none;;   
+} 
+section ul{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}   
