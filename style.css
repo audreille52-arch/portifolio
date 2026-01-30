@@ -1,4 +1,108 @@
 body{
-    background-color: gray;
+    background-color: rgb(242, 226, 226);
     
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(36, 102, 127);
+    flex-direction: column;
+  
+}
+
+nav{
+    background-color: rgb(101, 214, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    
+}
+nav ul li{
+list-style: none;
+
+}
+nav ul li:hover{
+list-style: none;
+background-color: white;
+
+}
+
+nav ul li a{
+font-size: 20px;
+font-weight: 700;
+text-decoration: none;
+color: rgb(36, 102, 127);
+
+}
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wel{
+    margin-top: 60px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(85, 132, 149) ;  
+    border-radius: 27px;
+}
+
+.feat{
+   margin-top: 60px;  
+}
+.upd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.upd h3{
+ text-align: center;
+ font-weight: 100;
+}
+aside ul{
+display: flex;
+gap: 120px;
+
+}
+
+aside h3,p{
+text-align: center;
+
+}
+aside ul li,a{
+text-decoration: none;
+list-style: none;
+color:rgb(36, 102, 127) ;
+
+
+}
+aside ul{
+
+background-color:rgb(147, 206, 151) ;
+border-radius: 15px;
+
+}
+footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 }
